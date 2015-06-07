@@ -63,3 +63,28 @@ noremap Ｗ W
 noremap Ｘ X
 noremap Ｙ Y
 noremap Ｚ Z
+
+function! SokuonInit() abort
+  if !exists('b:sokuonCount')
+    let b:sokuonCount = 0
+  endif
+endfunction
+
+function! SokuonIncrease() abort
+  call SokuonInit()
+  let b:sokuonCount += 1
+endfunction
+
+noremap <expr> っ SokuonIncrease()
+
+function! SokuonFire(key) abort
+  call SokuonInit()
+  try
+    for i in range(b:sokuonCount)
+      execute "normal " . a:key
+      echomsg "normal " . a:key
+    endfor
+  finally
+    let b:sokuonCount = 0
+  endtry
+endfunction
