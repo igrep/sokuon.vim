@@ -89,7 +89,7 @@ noremap <expr> っ SokuonIncrease()
 function! SokuonFire(key) abort
   call SokuonInit()
   try
-    for i in range(b:sokuonCount)
+    for i in range(b:sokuonCount + 1)
       execute "normal " . a:key
     endfor
   finally
