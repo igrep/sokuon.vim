@@ -82,7 +82,6 @@ function! SokuonFire(key) abort
   try
     for i in range(b:sokuonCount)
       execute "normal " . a:key
-      echomsg "normal " . a:key
     endfor
   finally
     let b:sokuonCount = 0
