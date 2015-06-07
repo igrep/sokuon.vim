@@ -32,7 +32,9 @@ noremap <expr> ｓ SokuonFire('s')
 noremap <expr> ｔ SokuonFire('t')
 noremap <expr> ｕ SokuonFire('u')
 noremap <expr> ｖ SokuonFire('v')
-noremap <expr> ｗ SokuonFire('w')
+
+noremap ｗ w
+
 noremap <expr> ｘ SokuonFire('x')
 noremap <expr> ｙ SokuonFire('y')
 noremap <expr> ｚ SokuonFire('z')
