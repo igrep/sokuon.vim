@@ -10,7 +10,6 @@ noremap ウ u
 noremap エ e
 noremap オ o
 
-"" こういうRubyで出した: (('a'..'z').to_a + ('A'..'Z').to_a).each {|c| puts "noremap <expr> #{(c.ord + 65248).chr(Encoding::UTF_8)} SokuonFire('#{c}')" };
 noremap <expr> ａ SokuonFire('a')
 noremap <expr> ｂ SokuonFire('b')
 noremap <expr> ｃ SokuonFire('c')
