@@ -9,60 +9,60 @@ noremap イ i
 noremap ウ u
 noremap エ e
 noremap オ o
-"" こういうRubyで出した: ('a'..'z').each {|c| puts "noremap #{(c.ord + 65248).chr(Encoding::UTF_8)} #{c}" }
-noremap ａ a
-noremap ｂ b
-noremap ｃ c
-noremap ｄ d
-noremap ｅ e
-noremap ｆ f
-noremap ｇ g
-noremap ｈ h
-noremap ｉ i
-noremap ｊ j
-noremap ｋ k
-noremap ｌ l
-noremap ｍ m
-noremap ｎ n
-noremap ｏ o
-noremap ｐ p
-noremap ｑ q
-noremap ｒ r
-noremap ｓ s
-noremap ｔ t
-noremap ｕ u
-noremap ｖ v
-noremap ｗ w
-noremap ｘ x
-noremap ｙ y
-noremap ｚ z
 
-noremap Ａ A
-noremap Ｂ B
-noremap Ｃ C
-noremap Ｄ D
-noremap Ｅ E
-noremap Ｆ F
-noremap Ｇ G
-noremap Ｈ H
-noremap Ｉ I
-noremap Ｊ J
-noremap Ｋ K
-noremap Ｌ L
-noremap Ｍ M
-noremap Ｎ N
-noremap Ｏ O
-noremap Ｐ P
-noremap Ｑ Q
-noremap Ｒ R
-noremap Ｓ S
-noremap Ｔ T
-noremap Ｕ U
-noremap Ｖ V
-noremap Ｗ W
-noremap Ｘ X
-noremap Ｙ Y
-noremap Ｚ Z
+"" こういうRubyで出した: (('a'..'z').to_a + ('A'..'Z').to_a).each {|c| puts "noremap <expr> #{(c.ord + 65248).chr(Encoding::UTF_8)} SokuonFire('#{c}')" };
+noremap <expr> ａ SokuonFire('a')
+noremap <expr> ｂ SokuonFire('b')
+noremap <expr> ｃ SokuonFire('c')
+noremap <expr> ｄ SokuonFire('d')
+noremap <expr> ｅ SokuonFire('e')
+noremap <expr> ｆ SokuonFire('f')
+noremap <expr> ｇ SokuonFire('g')
+noremap <expr> ｈ SokuonFire('h')
+noremap <expr> ｉ SokuonFire('i')
+noremap <expr> ｊ SokuonFire('j')
+noremap <expr> ｋ SokuonFire('k')
+noremap <expr> ｌ SokuonFire('l')
+noremap <expr> ｍ SokuonFire('m')
+noremap <expr> ｎ SokuonFire('n')
+noremap <expr> ｏ SokuonFire('o')
+noremap <expr> ｐ SokuonFire('p')
+noremap <expr> ｑ SokuonFire('q')
+noremap <expr> ｒ SokuonFire('r')
+noremap <expr> ｓ SokuonFire('s')
+noremap <expr> ｔ SokuonFire('t')
+noremap <expr> ｕ SokuonFire('u')
+noremap <expr> ｖ SokuonFire('v')
+noremap <expr> ｗ SokuonFire('w')
+noremap <expr> ｘ SokuonFire('x')
+noremap <expr> ｙ SokuonFire('y')
+noremap <expr> ｚ SokuonFire('z')
+noremap <expr> Ａ SokuonFire('A')
+noremap <expr> Ｂ SokuonFire('B')
+noremap <expr> Ｃ SokuonFire('C')
+noremap <expr> Ｄ SokuonFire('D')
+noremap <expr> Ｅ SokuonFire('E')
+noremap <expr> Ｆ SokuonFire('F')
+noremap <expr> Ｇ SokuonFire('G')
+noremap <expr> Ｈ SokuonFire('H')
+noremap <expr> Ｉ SokuonFire('I')
+noremap <expr> Ｊ SokuonFire('J')
+noremap <expr> Ｋ SokuonFire('K')
+noremap <expr> Ｌ SokuonFire('L')
+noremap <expr> Ｍ SokuonFire('M')
+noremap <expr> Ｎ SokuonFire('N')
+noremap <expr> Ｏ SokuonFire('O')
+noremap <expr> Ｐ SokuonFire('P')
+noremap <expr> Ｑ SokuonFire('Q')
+noremap <expr> Ｒ SokuonFire('R')
+noremap <expr> Ｓ SokuonFire('S')
+noremap <expr> Ｔ SokuonFire('T')
+noremap <expr> Ｕ SokuonFire('U')
+noremap <expr> Ｖ SokuonFire('V')
+noremap <expr> Ｗ SokuonFire('W')
+noremap <expr> Ｘ SokuonFire('X')
+noremap <expr> Ｙ SokuonFire('Y')
+noremap <expr> Ｚ SokuonFire('Z')
 
 function! SokuonInit() abort
   if !exists('b:sokuonCount')
